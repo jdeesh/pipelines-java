@@ -35,3 +35,6 @@ steps:
     filepath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'  # Point to the zip file directly
     sandboxName: 'Dailyscan'
     maximumWaitTime: '360'
+  displayName: 'Run Veracode Scan'
+  env:
+    SYSTEM_DEBUG: true
