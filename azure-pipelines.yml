@@ -32,6 +32,6 @@ steps:
     AnalysisService: 'Veracode_api'
     veracodeAppProfile: 'AzureDevOps'
     version: '$(build.buildNumber)'
-    filepath: '$(build.artifactstagingdirectory)'
+    filepath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'  # Point to the zip file directly
     sandboxName: 'Dailyscan'
     maximumWaitTime: '360'
